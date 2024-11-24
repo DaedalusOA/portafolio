@@ -1,0 +1,194 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: white;
+    font-family: "Quicksand", serif;
+
+}
+
+
+.projects{
+   padding-top: 75px;
+
+}
+
+.titleCont{
+    position: fixed; /* Makes the title container fixed */
+    z-index: 2;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+   
+    padding: 20px;
+    color: black;
+
+    width: 100%;
+    border: 2px solid black; 
+    height: 35px;
+}
+
+.title, .subtitle {
+    margin: 0;
+}
+
+.title{
+
+    padding-left: 10px;
+
+   
+    font-size: 30px;
+    font-weight: 500;
+   
+    user-select: none; /* Prevents text selection */
+    transition: ease-in-out 0.2s;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  
+}
+
+
+h4{
+    font-size: 40px;
+    font-weight: 500;
+
+    user-select: none;
+    text-align: right;
+    transition: ease-in-out 0.2s;
+   
+}
+/* 
+Styling the image */
+
+
+/* Styling the image */
+img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
+    transition: ease-in-out 0.3s;
+    border: 2px solid transparent; 
+    opacity: 0.9;
+    
+    
+   
+    
+}
+
+
+.card {
+    color: black;
+    padding: 1.5rem;
+    height: 500px;
+    border: 1px solid black; 
+    
+    
+}
+.card:hover  {
+    backdrop-filter: blur(10px);
+    
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Enlarge the image */
+    opacity: 1;
+    
+    
+
+}
+.card:hover h4 {
+    letter-spacing: 1px;
+}
+
+
+.cards {
+ 
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 0rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+   
+}
+
+
+.tag{
+    
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-weight: 100;
+   
+    user-select: none; /* Prevents text selection */
+    transition: ease-in-out 0.2s;
+    
+}
+
+
+
+.separeatr{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+
+
+   
+}
+.media{
+    justify-content: space-evenly;
+    width: 100%;
+   
+    flex-direction: row;    /* Align text and slider in a row */
+    align-items: center;  
+    flex-wrap: nowrap;
+    display: flex;   
+    border: 1px solid black;   
+
+}
+.m{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+
+    user-select: none; /* Prevents text selection */
+    transition: ease-in-out 0.2s;
+    text-decoration: none;
+    color: black;
+   
+  
+    
+
+}
+
+.m:hover{
+    font-weight: 800;
+
+}
+
+
+
+
+
+
+
+
+/* Ensure the canvas is positioned in front */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* A high z-index to ensure it is on top */
+}
+
+
