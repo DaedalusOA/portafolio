@@ -10,14 +10,12 @@ body{
     font-family: "Quicksand", serif;
     display: flex;
     justify-content: center;
-    
-    
 
 }
 
 
 .projects{
-   /* overflow-x: hidden; */
+   overflow-x: hidden; 
    width:  95%;
    max-width: 1500px;
  
@@ -39,7 +37,7 @@ body{
     border: 1px solid black; 
     display: flex;
     flex-direction: row;
-    justify-content: space;
+   
     
    
     
@@ -94,11 +92,10 @@ a{
 
 
 h4{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
 
     user-select: none;
-    text-align: right;
     transition: ease-in-out 0.2s;
    
 }
@@ -108,12 +105,13 @@ Styling the image */
 
 /* Styling the image */
 img {
-    width: 100%;
-    height: 75%;
+    width:100%;
+    height: 70%;
     object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
     transition: ease-in-out 0.3s;
     border: 2px solid transparent; 
-    opacity: 0.9;
+    opacity: 1;
+    padding-bottom: 0rem;
     
     
    
@@ -123,20 +121,33 @@ img {
 
 .card {
     color: black;
-    padding: 1.5rem;
+    
+    
     height: 500px;
     border: 1px solid black; 
     background-color: white;
     border-top: 0px solid black; 
     border-left: 0px solid black; 
     transition:  0.3s ease-in-out; /* Optional: for color transition */
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+  
+    padding: 1.5rem;
+  
+    
    
     
     
 }
 
 .card:hover  {
-    background-color: rgb(255, 200, 200);
+    background-color: rgb(200, 220, 255);
 }
 
 .card:hover img {
@@ -148,6 +159,18 @@ img {
 }
 .card:hover h4 {
     letter-spacing: 1px;
+}
+.card:hover .expl {
+   
+    transform: translate(0px, -20px);
+    
+   
+}
+.expl{
+    font-size: 15px;
+    transform: translatey(-30px);
+    transition:  0.3s ease-in-out; /* Optional: for color transition */
+
 }
 
 
@@ -177,6 +200,8 @@ img {
     width: 100%;
     height: 50px;
     border: 1px solid black;
+    border-bottom: 0px solid black;
+    border-top: 0px solid black;
 
     background-color: rgba(240, 240, 240, 1);
     display: flex;
@@ -196,6 +221,7 @@ img {
     flex-wrap: nowrap;
     display: flex;   
     border: 1px solid black;   
+    border-left: 0px solid black; 
     background-color: rgba(240, 240, 240, 1);
 
 }
@@ -204,7 +230,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     border-left: 1px solid black;
-    border-right: 1px solid black;
+    
     width: 100%;
     text-align: center;
 
@@ -223,6 +249,7 @@ img {
     width: 140%;
 
 }
+
 
 
 
