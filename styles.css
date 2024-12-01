@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -34,9 +35,16 @@ body{
     color: black;
 
     width: 100%;
-    border: 1px solid black; 
+  
     display: flex;
     flex-direction: row;
+   
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    border-top: 1px solid black;
+
+   
    
     
    
@@ -55,6 +63,8 @@ body{
    
    transition: ease-in-out 0.1s;
    transition: transform  ease-in-out 0.4s;
+   border-right: 1px solid black;
+   
 }
 .logo:hover{
     transform: rotate(180deg);
@@ -64,9 +74,8 @@ body{
 .title{
     
     padding: 14px;
-    border-left: 1px solid black;   /* Left border */
-    border-right: 1px solid black;  /* Right border */
-    
+    border-right: 1px solid black;
+
     
 
    
@@ -110,7 +119,7 @@ img {
     height: 70%;
     object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
     transition: ease-in-out 0.3s;
-    border: 2px solid transparent; 
+
     opacity: 1;
     padding-bottom: 0rem;
     
@@ -122,14 +131,17 @@ img {
 
 .card {
     color: black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+    
+   
     
     
     height: 500px;
-    border: 1px solid black; 
+
     background-color: white;
-    border-top: 0px solid black; 
-    border-left: 0px solid black; 
-    
+   
     transition:  0.3s ease-in-out; /* Optional: for color transition */
 
 
@@ -176,13 +188,13 @@ img {
 }
 
 
+
 .cards {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    border: 1px solid black; 
-    border-bottom: 0px solid black; 
-    
+    border-left: 1px solid black;
+
 }
 
 .tag{
@@ -202,9 +214,19 @@ img {
 .separeatr{
     width: 100%;
     height: 50px;
-    border: 1px solid black;
-    border-bottom: 0px solid black;
-    border-top: 0px solid black;
+
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     border-right: 1px solid black;
+     border-left: 1px solid black;
+
+   
+
+   
+   
+    
+   
+   
 
     background-color: rgba(240, 240, 240, 1);
     display: flex;
@@ -223,9 +245,11 @@ img {
     align-items: center;  
     flex-wrap: nowrap;
     display: flex;   
-    border: 1px solid black;   
-    border-left: 0px solid black; 
+
     background-color: rgba(240, 240, 240, 1);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+   
 
 }
 .m{
@@ -233,6 +257,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     border-left: 1px solid black;
+
     
     width: 100%;
     text-align: center;
@@ -261,5 +286,4 @@ img {
         grid-template-columns: 1fr; /* Each card takes up the full width */
     }
 }
-
 
