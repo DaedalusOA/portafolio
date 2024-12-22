@@ -37,7 +37,7 @@ body{
   margin-bottom: 20px;
 }
 .normal_text{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   text-decoration: none;
   color: black;
@@ -55,9 +55,11 @@ body{
 }
 .nnormal_text:hover{
   background-color: rgba(0, 0, 0, 0.103);
-  
-
 }
+
+.info{
+  padding: 10px;
+  }
 .title_text{
   font-size: 70px;
   font-weight: 300;
@@ -96,6 +98,7 @@ body{
   margin: 3px;
   margin-left: 10%;
   margin-right: 10%;
+  
 
 }
 
@@ -124,15 +127,13 @@ body{
   display: flex;
   justify-content: space-between;
   transition:  0.3s ease-in-out; /* Optional: for color transition */
-
-  
-  
+  position: relative;
 }
 
 
 .image_container{
   width: 60%;
-  min-width: 250px;
+  min-width: 100px;
   height: 400px;
   
 
@@ -154,6 +155,7 @@ body{
   width: 80%;
 
 }
+
 .text_container_full{
 
   position: absolute;
@@ -247,10 +249,60 @@ body{
   justify-content: space-between;
   
 
-  
-  
+
 
   
 }
 
+
+
+
+
+/* Styles for phones or smaller screens */
+@media (max-width: 768px) {
+  .top_row{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .title_text{
+    font-size: 50px;
+  }
+  .normal_text{
+    font-size: 17px;
+  }
+  .nnormal_text{
+    font-size: 17px;
+  }
+ 
+  .singleThing{
+    flex-direction: column;
+  }
+  .image_container{
+    width: 90%;
+    height: 200px;
+  }
+  .text_container{
+    margin: 0px;
+  }
+  .text_container{
+    width: 100%;
+  }
+  .dates{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 3px;
+    padding-top: 7px;
+   
+    
+  
+  }
+  .buttons{
+    position: absolute;
+    right: 0px;
+    height: 100%;
+
+    
+  }
+  
+}
 
