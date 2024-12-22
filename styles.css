@@ -161,6 +161,8 @@ body{
   position: absolute;
   bottom: 10px;
   left: 10px;
+  width: 82%;
+
   
 }
 .large_img {
@@ -278,7 +280,7 @@ body{
     flex-direction: column;
   }
   .image_container{
-    width: 85%;
+    width: 82%;
     height: 200px;
   }
   .text_container{
@@ -295,6 +297,12 @@ body{
    
     
   
+  }
+  .text{
+    font-size: 20px;
+  }
+  .textn{
+    font-size: 20px;
   }
   .buttons{
     position: absolute;
