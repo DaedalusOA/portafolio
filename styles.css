@@ -1,289 +1,256 @@
-
-* {
-    box-sizing: border-box;
-}
-
-
 body{
-    margin: 0px;
-    overflow-x: hidden;
-    background-color: white;
-    font-family: "Quicksand", serif;
-    display: flex;
-    justify-content: center;
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: white;
 
-}
-
-
-.projects{
-   overflow-x: hidden; 
-   width:  95%;
-   max-width: 1500px;
+  font-family: "Quicksand", serif;
  
-   
+}
+*{
+  margin: 0px;
+  text-decoration: none;
 
 }
 
-.titleCont{
-    
-   
-    z-index: 2;
-    text-align: left;
-    background-color: rgba(240, 240, 240, 1);
+.paper{
+  padding-left: 30px;
+  padding-right: 30px;
 
-   
-    color: black;
-
-    width: 100%;
+}
   
-    display: flex;
-    flex-direction: row;
-   
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+.top_row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-    border-top: 1px solid black;
-
-   
-   
-    
-   
-    
-
-    
-}
-
-.title, .subtitle {
-    margin: 0;
-}
-
-.logo{
-    width: 60px;
-    padding: 5px;
-   
-   transition: ease-in-out 0.1s;
-   transition: transform  ease-in-out 0.4s;
-   border-right: 1px solid black;
-   
-}
-.logo:hover{
-    transform: rotate(180deg);
   
 }
+.line{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.246);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.linedown{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.246);
 
-.title{
-    
-    padding: 14px;
-    border-right: 1px solid black;
-
-    
-
-   
-    font-size: 24px;
-    font-weight: 500;
-   
-    user-select: none; /* Prevents text selection */
-    transition: ease-in-out 0.2s;
-    
+  margin-bottom: 20px;
+}
+.normal_text{
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  transition: .3s ease-in-out;
+  padding: 10px;
 }
 
+.nnormal_text{
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  transition: .3s ease-in-out;
+  padding: 10px;
+}
+.nnormal_text:hover{
+  background-color: rgba(0, 0, 0, 0.103);
+  
 
-a{
-    text-decoration: none;
+}
+.title_text{
+  font-size: 70px;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.5s ease-in;
+
+}
+.title_text:hover{
+  transform: rotate(80deg);
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+.date{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 3px;
+
   
 }
 
+.fdate{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 3px;
+  position: absolute;
 
-h4{
-    font-size: 20px;
-    font-weight: 500;
-
-    user-select: none;
-    transition: ease-in-out 0.2s;
-   
-}
-/* 
-Styling the image */
-
-
-/* Styling the image */
-img {
-
-    width:100%;
-    height: 70%;
-    object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
-    transition: ease-in-out 0.3s;
-
-    opacity: 1;
-    padding-bottom: 0rem;
-    
-    
-   
-    
-}
-
-
-.card {
-    color: black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-
-    
-   
-    
-    
-    height: 500px;
-
-    background-color: white;
-   
-    transition:  0.3s ease-in-out; /* Optional: for color transition */
-
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    
-    
+  top: 10px;
+  left: 10px;
   
-    padding: 1.5rem;
+
   
-    
-   
-    
-    
 }
-
-.card:hover  {
-    background-color: rgb(200, 220, 255);
-}
-
-.card:hover img {
-    transform: scale(1.05); /* Enlarge the image */
-    opacity: 1;
-    
-    
+.dates{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 3px;
+  margin-left: 10%;
+  margin-right: 10%;
 
 }
-.card:hover h4 {
-    letter-spacing: 1px;
+
+.num{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 3px;
+  
 }
-.card:hover .expl {
-   
-    transform: translate(0px, -20px);
-    
-   
+
+.category{
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 19px;
+  background-color: rgba(0, 0, 0, 0.103);
+  width: fit-content;
+
+}
+
+.singleThing{
+
+  display: flex;
+  justify-content: space-between;
+  transition:  0.3s ease-in-out; /* Optional: for color transition */
+
+  
+  
+}
+
+
+.image_container{
+  width: 60%;
+  min-width: 250px;
+  height: 400px;
+  
+
+}
+.text_container{
+  width: 80%;
+  margin: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+ 
+ 
+
+}
+
+.itemcont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+
+}
+.text_container_full{
+
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  
+}
+.large_img {
+
+  height: 500px; /* Fixed height for the container */
+  width: 100%; /* Ensures the image stretches across the container */
+  object-fit: cover; /* Crops the image to cover the container while maintaining aspect ratio */
+  display: block; /* Prevents extra space below the image */
+}
+.img {
+
+  height: 100%; /* Fixed height for the container */
+  width: 100%; /* Ensures the image stretches across the container */
+  object-fit: cover; /* Crops the image to cover the container while maintaining aspect ratio */
+  display: block; /* Prevents extra space below the image */
+}
+
+.ttitle{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.fullThing{ 
+  
+
+    position: relative; /* Make the parent container a positioning context */
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    transition:0.3s ease-in-out;
+
+}
+
+.fullThing_w{ 
+  
+
+  position: relative; /* Make the parent container a positioning context */
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+  transition:0.3s ease-in-out;
+  color: white;
+
 }
 .expl{
-    font-size: 15px;
-    transform: translatey(-30px);
-    transition:  0.3s ease-in-out; /* Optional: for color transition */
-
+  margin-top: 10px;
 }
 
-
-
-.cards {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    border-left: 1px solid black;
-
+.text{
+  writing-mode: vertical-lr; /* Rotate text vertically from right to left */
+  transition: 0.3s ease-in-out;
+  width: auto;
+  font-size: 22px;
+  padding: 10px;
+  color: black;
+}
+.textn{
+  writing-mode: vertical-lr; /* Rotate text vertically from right to left */
+  transition: 0.3s ease-in-out;
+  width: auto;
+  font-size: 22px;
+  padding: 10px;
+  color: black;
+}
+.text:hover{
+  background-color: rgba(100, 100, 100, 0.2);
 }
 
-.tag{
-    
-    font-size: 18px;
-    padding-left: 30px;
-    padding-right: 10px;
-    font-weight: 300;
-   
-    user-select: none; /* Prevents text selection */
-    transition: ease-in-out 0.2s;
-    
-}
-
-
-
-.separeatr{
-    width: 100%;
-    height: 50px;
-
-     border-top: 1px solid black;
-     border-bottom: 1px solid black;
-     border-right: 1px solid black;
-     border-left: 1px solid black;
-
-   
-
-   
-   
-    
-   
-   
-
-    background-color: rgba(240, 240, 240, 1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-
-
-   
-}
-.media{
-    justify-content: space-evenly;
-    width: 100%;
-   
-    flex-direction: row;    /* Align text and slider in a row */
-    align-items: center;  
-    flex-wrap: nowrap;
-    display: flex;   
-
-    background-color: rgba(240, 240, 240, 1);
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-   
-
-}
-.m{
-    padding: 15px;
-    font-size: 20px;
-    font-weight: 500;
-    border-left: 1px solid black;
-
-    
-    width: 100%;
-    text-align: center;
-
-    user-select: none; /* Prevents text selection */
-    transition: ease-in-out 0.2s;
-    text-decoration: none;
-    color: black;
-   
+.buttons{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
-    
+
 
 }
 
-.m:hover{
-    font-weight: 800;
-    width: 140%;
+.fbuttons{
+  height: 100%;
+  right: 0px;
+  
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 
+  
+  
+
+  
 }
 
-
-
-
-@media (max-width: 600px) {
-    .cards {
-        grid-template-columns: 1fr; /* Each card takes up the full width */
-    }
-}
 
